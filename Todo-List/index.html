@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>To Do List</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Caveat&family=Roboto&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <div class="imgContainer">
+        <img src="assets/legal-pad-979558_1280.png">
+    </div>
+    <h1 class="title">To Do List</h1>
+    <button id="help">Help</button>
+
+    <div class="help" id="help-content">
+        <h3>HELP - Instructions</h3>
+        <ol>
+            <li>Add Item to do list by keying item in 'Type here to add to do' box. <img src="assets/todo-box.png"></li>
+            <li>Click 'Add To do, to add item to the list. <img src="assets/todo-button.png"></li>
+            <li>When the To do is completed, click the green check button. If checked in error, click again.<img
+                    src="assets/todo-checkbox.png"></li>
+            <li>If you want to delete a To do, click the red X to remove it.<img src="assets/todo-delete.png"></li>
+        </ol>
+        Note: List will be saved when you close your browser, so you can continue where you left off when you re-open
+        the To Do List!
+        </p>
+        <button id="close">Close</button>
+    </div>
+
+    <form class="addItem">
+        <input type="text" placeholder="Type here to add to do" id="add">
+        <button type="submit" class="addBtn" id="add-btn">Add To do</button>
+    </form>
+    <span>
+        <ol class="list" id="todo-list">
+
+        </ol>
+    </span>
+    <script src="app.js"></script>
+</body>
+
+</html>

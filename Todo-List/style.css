@@ -1,0 +1,90 @@
+.list {
+    position: absolute;
+    top: 128px;
+    left: 95px;
+}
+
+.item {
+    padding: 1px;
+    font-size: 24px;
+    font-family: 'Caveat', cursive;
+}
+
+.title {
+    position: absolute;
+    top: 15px;
+    left: 425px;
+    font-weight: bold;
+    color: blanchedalmond;
+    font-family: 'Roboto'
+}
+
+.imgContainer {
+    position: relative;
+    margin: 0 auto;
+}
+
+.addItem {
+    position: absolute;
+    top: 72px;
+    left: 730px;
+}
+
+.button {
+    font-family: 'Roboto'
+}
+
+.complete {
+    background-color: green;
+    position: absolute;
+    left: 825px;
+    height: 23px;
+}
+
+.delete {
+    background-color: red;
+    position: absolute;
+    left: 870px;
+    font-weight: bold;
+    height: 23px;
+}
+
+.addBtn {
+    background-color: blanchedalmond;
+    color: #633821;
+    font-weight: bold;
+}
+
+
+#help {
+    background-color: blanchedalmond;
+    color: #633821;
+    font-weight: bold;
+    position: absolute;
+    top: 73px;
+    left: 15px;
+}
+
+.help {
+    background-color: white;
+    font-family: 'Roboto';
+    position: absolute;
+    top: 100px;
+    left: 10px;
+    display: none;
+}
+
+.done {
+    color: #C9CBCC;
+    text-decoration: line-through;
+}
+
+#close {
+    position: absolute;
+    top: 15px;
+    left: 825px;
+}
+
+#todo-list br {
+    display: none;
+}
