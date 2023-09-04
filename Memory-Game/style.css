@@ -1,0 +1,35 @@
+body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: black;
+}
+
+.card {
+    width: 200px;
+    height: 115px;
+}
+
+.gameboard {
+    position: absolute;
+    top: 150px;
+}
+
+div {
+    padding: 10px;
+}
+
+span {
+    padding: 0px 10px;
+}
+
+.score-board span {
+    color: white;
+}
+
+.gamecard {
+    transform: translateX(-50%);
+    --webkit--transition: all .3s ease-in-out;
+    -moz-transition: all .3s ease-in-out;
+    transition: all .3s ease-in-out;
+}
