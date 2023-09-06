@@ -6,41 +6,81 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Memory Game!</title>
     <link rel="stylesheet" href="style.css">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Caveat&family=DM+Sans:opsz,wght@9..40,500&family=Roboto&display=swap"
+        rel="stylesheet">
 
 </head>
 
 <body>
-    <div class="score-board">
-        <span id="match">Matches</span>
-        <span id="match-score">0</span>
-        <span id="move">Moves</span>
-        <span id="move-score">0</span>
+    <div class="score-board off" id="score-board">
+        <div class="score">
+            <span id="match">Matches:</span>
+            <span id="match-score">0</span>
+        </div>
+        <div class="move">
+            <span id="move">Moves:</span>
+            <span id="move-score">0</span>
+        </div>
+        <div class="time">
+            <span id="timehead">Time:</span>
+            <span id="min" class="timer">0</span>
+            <span id="colon" class="timer">:</span>
+            <span id="sec" class="timer">00</span>
+        </div>
 
     </div>
-    <div class="gameboard">
-        <div class="row1">
+    <div class="container off" id="container">
+        <div class="gameboard">
             <span class="card"><img id="r1c1" class="gmcard" data-arr="0" src="assets/memory.png"></span>
             <span class="card"><img id="r1c2" class="gmcard" data-arr="1" src="assets/memory.png"></span>
             <span class="card"><img id="r1c3" class="gmcard" data-arr="2" src="assets/memory.png"></span>
             <span class="card"><img id="r1c4" class="gmcard" data-arr="3" src="assets/memory.png"></span>
-        </div>
-        <div class="row2">
+            <br>
             <span class="card"><img id="r2c1" class="gmcard" data-arr="4" src="assets/memory.png"></span>
             <span class="card"><img id="r2c2" class="gmcard" data-arr="5" src="assets/memory.png"></span>
             <span class="card"><img id="r2c3" class="gmcard" data-arr="6" src="assets/memory.png"></span>
             <span class="card"><img id="r2c4" class="gmcard" data-arr="7" src="assets/memory.png"></span>
-        </div>
-        <div class="row3">
+            <br>
             <span class="card"><img id="r3c1" class="gmcard" data-arr="8" src="assets/memory.png"></span>
             <span class="card"><img id="r3c2" class="gmcard" data-arr="9" src="assets/memory.png"></span>
             <span class="card"><img id="r3c3" class="gmcard" data-arr="10" src="assets/memory.png"></span>
             <span class="card"><img id="r3c4" class="gmcard" data-arr="11" src="assets/memory.png"></span>
-        </div>
-        <div class="row4">
+            <br>
             <span class="card"><img id="r4c1" class="gmcard" data-arr="12" src="assets/memory.png"></span>
             <span class="card"><img id="r4c2" class="gmcard" data-arr="13" src="assets/memory.png"></span>
             <span class="card"><img id="r4c3" class="gmcard" data-arr="14" src="assets/memory.png"></span>
             <span class="card"><img id="r4c4" class="gmcard" data-arr="15" src="assets/memory.png"></span>
+        </div>
+    </div>
+    <div class="welcome" id="welcome">
+        <div class="img"><img src="assets/mem-welcome.png"></div>
+        <div>
+            <h1 class="newgame" id="new">New Game</h1>
+        </div>
+    </div>
+    <div class="end-game off" id="gameover-container">
+        <div>
+            <h1 class=gameover id="end">Game Over</h1>
+        </div>
+        <div class="recap">
+            <h3 class=gameover id="end1">Your last game:</h4>
+        </div>
+        <div class="score-board-end">
+            <div class="score-end">
+                <span>Matches:&nbsp;</span>
+                <span id="match-end-score">0</span>
+            </div>
+            <div class="score-end">
+                <span>Moves:&nbsp;</span>
+                <span id="move-end">0</span>
+            </div>
+            <div class="score-end">
+                <span>Time:&nbsp;</span>
+                <span id="min-end">0</span>
+                <span id="colonend">:</span>
+                <span id="sec-end">00</span>
+            </div>
         </div>
     </div>
 
